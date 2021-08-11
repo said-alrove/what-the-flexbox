@@ -7,5 +7,6 @@
         @include less.query($device: 'tablet', $size: 'sm') {
             order: initial;
         }
+        margin-block-end: map.get(abs.$ly, 'margin-block');
     }
 }
