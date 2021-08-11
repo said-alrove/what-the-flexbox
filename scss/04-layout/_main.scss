@@ -1,0 +1,11 @@
+//********************************* 
+//* MAIN 
+//*********************************
+.main {
+    &-container {
+        order: 3;
+        @include less.query($device: 'tablet', $size: 'sm') {
+            order: initial;
+        }
+    }
+}

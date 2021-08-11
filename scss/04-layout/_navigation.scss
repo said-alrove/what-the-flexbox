@@ -1,0 +1,67 @@
+//********************************* 
+//* NAVIGATION 
+//*********************************
+.nav {
+    &-container { 
+        order: 1;
+        padding: 0; 
+        @include less.query($device: 'tablet', $size: 'sm') {
+            order: initial;
+        }
+    }
+
+    &__list {      
+        display: none;       
+        @include less.query($device: 'tablet', $size: 'sm') {
+            @include less.flexbox($dir: row, $wrap: wrap);
+        }
+        @include less.query($device: 'tablet', $size: 'lg') {
+            @include less.flexbox($display: false, $wrap: nowrap);
+        }
+    }
+
+    &__list.open {
+        @include less.flexbox($dir: column, $wrap: wrap);
+    }
+
+    &__item { 
+        flex-grow: 1; 
+        @include less.query($device: 'tablet', $size: 'sm') {
+            flex-basis: 50%;
+        }
+        @include less.query($device: 'tablet', $size: 'lg') {
+            flex-basis: 100%;
+        }
+
+        &-icon {
+            @include less.query($device: 'tablet', $size: 'sm') {
+                flex-basis: 25%;
+            }
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        padding: map.get(abs.$ly, 'padding');
+        inline-size: 100%;
+        color: map.get(abs.$clr, 'white');
+        letter-spacing: abs.$spacing;
+        transition: abs.$trans-300;
+
+        &:hover { background-color: map.get(abs.$alpha, 'black-300'); }
+    }
+}
+
+.toggle-nav {
+    @include less.flexbox($jt-content: center, $al-items: center);
+    color: map.get(abs.$clr, 'white');
+    padding: map.get(abs.$ly, 'padding');
+    @include less.query($device: 'tablet', $size: 'sm') {
+        display: none;
+    }
+
+    &-icon,
+    &-span { margin-inline: .5em; }
+
+    &-icon { inline-size: 2rem; }
+}

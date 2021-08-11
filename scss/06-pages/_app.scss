@@ -1,0 +1,157 @@
+//********************************* 
+//* APP 
+//*********************************
+.app {
+    &-container {
+        @include less.flexbox($dir: column);
+        margin-inline: auto;
+        max-inline-size: 50rem;
+        block-size: 70rem;
+        border: {
+            width: 1rem;
+            style: solid;
+            color: map.get(abs.$alpha, 'black-200');
+            radius: map.get(abs.$ly, 'rounded');
+        }
+    }
+
+    &__header {
+        @include less.flexbox
+        (
+            $wrap: wrap,
+            $jt-content: center,
+            $al-items: center
+        );
+        background-color: map.get(abs.$clr, 'lt', 'yellow-100');
+        @include less.query($device: 'mobile', $size: 'lg') {
+            @include less.flexbox($display: false, $wrap: nowrap);
+        }
+
+        > a {
+            flex: {
+                grow: 1;
+                shrink: 1;
+                basis: 40%;
+            }
+            order: 1;
+            @include less.query($device: 'mobile', $size: 'lg') {
+                flex-basis: 20%;
+            }
+        }
+    }
+
+    &__heading {
+        flex: {
+            grow: 1;
+            shrink: 1;
+            basis: 100%;
+        }
+        order: 2;
+        margin-block: 1em;
+        color: map.get(abs.$clr, 'dk', 'yellow-300');
+        font-size: 2rem;
+        text-align: center;
+        @include less.query($device: 'mobile', $size: 'lg') {
+            flex-basis: 60%;
+            order: 1;
+        }
+    }
+
+    &__btn {
+        @include less.flexbox
+        (
+            $jt-content: center, 
+            $al-items: center,
+            $gap: .25em
+        );
+        margin: map.get(abs.$ly, 'margin-block');
+        padding: .5em;
+        border-radius: map.get(abs.$ly, 'rounded');
+        background-color: map.get(abs.$alpha, 'black-200');
+        color: map.get(abs.$clr, 'white');
+        font-weight: bold;
+        transition: abs.$trans-300;
+
+        &:hover {
+            background-color: map.get(abs.$clr, 'dk', 'yellow-200');
+        }
+    }
+
+    &__content {
+        scrollbar-width: none;
+        flex: {
+            grow: 1;
+            shrink: 1;
+            basis: auto;
+        }
+        padding: .5em 1em;
+        font-size: 1.4rem;
+        line-height: 1.4;
+        background-color: map.get(abs.$clr, 'white');
+        color: map.get(abs.$clr, 'black');
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__paragraph {
+        margin-block: .25em;
+        text-align: justify;
+    }
+
+    &__image {
+        text-align: center;
+
+        > img[src*="wesbos"] {
+            inline-size: 21.6rem;
+            block-size: 14.4rem;
+            @include less.query($device: 'mobile', $size: 'lg') {
+                float: left;
+                margin-inline-end: 1rem;
+            }
+        }
+
+        >img[src*="yt3"] {
+            inline-size: 20rem;
+            aspect-ratio: 1 / 1;
+            @include less.query($device: 'mobile', $size: 'lg') {
+                float: right;
+                margin-inline-start: 1rem;
+            }
+        }
+    }
+
+    &__footer {
+        @include less.flexbox($wrap: wrap);
+        flex-grow: 1;
+    }
+
+    &__btn--footer {
+        flex: {
+            grow: 1;
+            shrink: 1;
+            basis: 50%;
+        }
+        @include less.flexbox
+        (
+            $dir: column,
+            $al-items: center,
+            $jt-content: center
+        );
+        block-size: 7rem;
+        background-color: map.get(abs.$clr, 'lt', 'yellow-100');
+        color: map.get(abs.$clr, 'white');
+        transition: abs.$trans-300;
+        @include less.query($device: 'mobile', $size: 'lg') {
+            flex-basis: 25%;
+        }
+
+        &:hover {
+            background-color: map.get(abs.$clr, 'dk', 'yellow-200');
+        }
+
+        > * {  margin: .3em; }
+    }
+}

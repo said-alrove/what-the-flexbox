@@ -1,0 +1,50 @@
+//********************************* 
+//* BASE 
+//*********************************
+html {
+    font-size: 62.5%;
+    @include less.box();
+}
+
+body { 
+    background-image: 
+        linear-gradient(to right, map.get(abs.$clr, 'dk', 'blue-100') 0%, map.get(abs.$clr, 'lt', 'purple-100') 100%);
+    font: {
+        family: map.get(abs.$ff, 'main');
+        size: 1.6rem;
+    } 
+}
+
+* {
+    order: 5;
+    margin: 0;
+    padding: 0;
+    @include less.box();
+    @include less.query($device: 'tablet', $size: 'sm') {
+        order: initial;
+    }
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+img { max-width: 100%; }
+
+//********************************* 
+//* TYPOGRAPHY 
+//*********************************
+h1, 
+h2,
+h3 { 
+    font-size: 3.2rem; 
+    text-transform: uppercase;
+    letter-spacing: abs.$spacing;
+    color: map.get(abs.$clr, 'white');
+}
+
+a { 
+    text-decoration: none; 
+    color: map.get(abs.$clr, 'white');
+}

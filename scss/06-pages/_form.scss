@@ -1,0 +1,114 @@
+//********************************* 
+//* FORM 
+//*********************************
+.form {
+    &-container {
+        @include less.grid
+        (
+            $cols: repeat(2, 1fr),
+            $gap: 1rem
+        );
+        padding: .5em;
+        border: {
+            width: .5em;
+            style: solid;
+            color: map.get(abs.$alpha, 'black-300');
+        }
+        border-radius: map.get(abs.$ly, 'rounded');
+        background-color: map.get(abs.$clr, 'white');
+        font-size: 2rem;
+        line-height: 2;
+        @include less.query($device: 'tablet', $size: 'lg') {
+            @include less.flexbox($jt-content: space-between, $al-items: center);
+        }
+    }
+
+    &__field {
+        $_padding: .75em;
+
+        &:nth-child(1) {
+            position: relative;
+            grid-column: 1 / -1;
+            @include less.query($device: 'tablet', $size: 'sm') {
+                flex-basis: 40%;
+            }
+
+            i {
+                position: absolute;
+                inset: {
+                    block-start: 50%;
+                    inline-end: .5em;
+                }
+                transform: translateY(-50%);
+                padding-inline: .25em;
+                background-color: map.get(abs.$clr, 'white');
+                color: map.get(abs.$clr, 'black');
+            }
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            grid-column: 1 / -1;
+            @include less.query($device: 'tablet', $size: 'sm') {
+                @include less.flexbox
+                (
+                    $jt-content: space-between, 
+                    $al-items: center,
+                    $gap: 1rem
+                );
+            }
+        }
+
+        &:nth-child(4) {
+            grid-column: 1 / 2;
+        }
+
+        &:nth-child(5) {
+            grid-column: 2 / -1;
+        }
+
+        label { 
+            @include less.query($device: 'tablet', $size: 'sm') {
+                flex-basis: 6rem;
+                text-align: center;
+            }
+        }
+
+        > input,
+        > select {
+            inline-size: 100%;
+            padding-inline: $_padding;
+            block-size: 5rem;
+            font: {
+                family: map.get(abs.$ff, 'form');
+                weight: bold;
+            }
+            border: {
+                width: .1rem;
+                style: solid;
+                color: map.get(abs.$clr, 'gray');
+                radius: math.div(map.get(abs.$ly, 'rounded'), 2);
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:placeholder-shown {
+                padding-inline-start: .5em;
+            }
+        }
+
+        > input[type="submit"] {
+            padding: .25em .5em;
+            border: none;
+            background-color: map.get(abs.$clr, 'lt', 'red-100');
+            color: map.get(abs.$clr, 'white');
+            transition: abs.$trans-300;
+
+            &:hover {
+                background-color: map.get(abs.$clr, 'dk', 'red-100');
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+//********************************* 
+//* NESTING - 1
+//*********************************
+.nesting {
+    &-container { padding: 0; }
+
+    &-one {
+        padding: {
+            block: 1em 0;
+            inline: 0;
+        }
+
+        .nav__list {
+            display: initial;
+            @include less.query($device: 'tablet', $size: 'sm') {
+                @include less.flexbox($wrap: nowrap);
+            }
+        }
+
+        .nav__link { 
+            > span { font-size: 1.8rem; }
+        }
+    }
+}

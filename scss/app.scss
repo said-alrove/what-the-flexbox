@@ -1,0 +1,61 @@
+//********************************* 
+//* 7-1 PATTERN 
+//*********************************
+
+//********************************* 
+//* BUILT-IN MODULES 
+//*********************************
+@use 'sass:math';
+@use 'sass:meta';
+@use 'sass:map';
+@use 'sass:list';
+@use 'sass:color';
+@use 'sass:string';
+@use 'sass:selector';
+
+//********************************* 
+//* ABSTRACTS 
+//*********************************
+@use '01-abstracts/index' as abs;
+
+//********************************* 
+//* VENDORS 
+//*********************************
+@use '02-vendors/lessier' as less with (
+    $vw-tablet-md: 992px,
+    $vw-tablet-lg: 1150px
+);
+
+//********************************* 
+//* BASE 
+//*********************************
+@import 
+    '03-base/base',
+    '03-base/helpers';
+
+//********************************* 
+//* LAYOUT 
+//*********************************
+@import 
+    '04-layout/header',
+    '04-layout/navigation',
+    '04-layout/main',
+    '04-layout/footer';
+
+//********************************* 
+//* COMPONENTS 
+//*********************************
+@import 
+    '05-components/loader',
+    '05-components/hero';
+
+//********************************* 
+//* PAGES 
+//*********************************
+@import 
+    '06-pages/index',
+    '06-pages/nesting(1)',
+    '06-pages/nesting(2)',
+    '06-pages/columns',
+    '06-pages/form',
+    '06-pages/app';

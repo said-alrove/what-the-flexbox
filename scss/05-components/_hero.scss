@@ -1,0 +1,11 @@
+//********************************* 
+//* HERO 
+//*********************************
+.hero {
+    &-container {
+        > img {
+            margin-block: map.get(abs.$ly, 'margin-block');
+            inline-size: 90%;
+        }
+    }
+}

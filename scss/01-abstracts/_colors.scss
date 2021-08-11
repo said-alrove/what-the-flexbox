@@ -1,0 +1,30 @@
+@use 'sass:map';
+@use 'sass:color';
+//********************************* 
+//* COLORS 
+//*********************************
+$clr: (
+    'lt': (
+        'yellow-100': hsl(46deg, 87%, 56%),
+        'yellow-200': hsl(60deg, 100%, 50%),
+        'red-100': hsl(4deg, 100%, 64%),
+        'purple-100': hsl(291deg, 50%, 62%)
+    ),
+    'dk': (
+        'yellow-100': hsl(57deg, 66%, 48%),
+        'yellow-200': hsl(40deg, 75%, 31%),
+        'yellow-300': hsl(42deg, 85%, 26%),
+        'red-100': hsl(346deg, 100%, 52%),
+        'blue-100': hsl(211deg, 67%, 41%)
+    ),
+    'white': hsl(0deg, 0%, 100%),
+    'gray': hsl(0deg, 0%, 50%),
+    'black': hsl(0deg, 0%, 0%),
+);
+
+$alpha: (
+    'black-200': color.change(map.get($clr, 'black'), $alpha: .2),
+    'black-300': color.change(map.get($clr, 'black'), $alpha: .3),
+    'white-200': color.change(map.get($clr, 'white'), $alpha: .2),
+    'white-300': color.change(map.get($clr, 'white'), $alpha: .3),
+)

@@ -1,0 +1,43 @@
+//********************************* 
+//* DETAILS 
+//*********************************
+.details {
+    &-container { font-weight: bold; }
+
+    &__text:first-of-type {
+        margin-block-end: map.get(abs.$ly, 'margin-block');
+    }
+}
+
+//********************************* 
+//* INPUTS
+//*********************************
+.sign-up {
+    @include less.flexbox($dir: column, $gap: 3rem);
+    @include less.query($device: 'tablet', $size: 'sm') {
+        @include less.flexbox(
+            $display: false,
+            $dir: row,
+            $gap: 6rem
+        );
+    }
+
+    @at-root {
+        & > input {
+            block-size: 3rem;
+            border: none;
+            border-radius: map.get(abs.$ly, 'rounded');
+            text-align: center;
+            @include less.query($device: 'tablet', $size: 'sm') {
+                flex: {
+                    grow: 1;
+                    basis: 0;
+                }
+            }
+
+            &:focus { 
+                outline-color: map.get(abs.$clr, 'dk', 'blue-100'); 
+            }
+        }
+    }
+}

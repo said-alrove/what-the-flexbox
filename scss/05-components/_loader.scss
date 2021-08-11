@@ -1,0 +1,57 @@
+//********************************* 
+//* PRE-LOADER 
+//*********************************
+.lds-ring {
+    position: relative;
+    @include less.flexbox($dir: column);
+    inline-size: 80px;
+    block-size: 80px;
+}
+
+.lds-ring div {
+    position: absolute;
+    display: block;
+    margin: 8px;
+    inline-size: 64px;
+    block-size: 64px;
+    box-sizing: border-box;
+    border: {
+        width: 8px;
+        style: solid;
+        color: 
+            #fff 
+            transparent 
+            transparent 
+            transparent;
+        radius: 50%;
+    }
+    animation: {
+        name: lds-ring;
+        duration: 1.2s;
+        timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+        iteration-count: infinite;
+
+    }
+    
+    &:nth-child(1) { animation-delay: -0.45s; }
+
+    &:nth-child(2) { animation-delay: -0.30s; }
+
+    &:nth-child(3) { animation-delay: -0.15s; }
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.is-hidden { overflow: hidden; }
+
+.is-centered {
+    @include less.flexbox($jt-content: center, $al-items: center);
+    block-size: 100vh;
+}

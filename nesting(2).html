@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#C06ECF">
+        <meta name="msapplication-TileColor" content="#C06ECF">
+        <meta name="description" content="Practices from the What the Flexbox? course taught by Wesbos in his web.">
+        <meta name="author" content="Said Alejandro">
+        <meta name="copyright" content="Alrove 2021 - Copyright &copy;">
+        <title>Nesting | What the flexbox?</title>
+        <!-- *** FACEBOOK *** -->
+        <meta property="og:url" content="https://github.com/said-alrove/what-the-flexbox">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:image" content="https://github.com/said-alrove/what-the-flexbox/assets/png/open-graph.png">
+        <meta property="og:image:type" content="img/png">
+        <meta property="og:image:width" content="1104">
+        <meta property="og:image:height" content="493">
+        <meta property="og:image:alt" content="What the Flexbox? course logo">
+        <meta property="og:title" content="Nesting | What the Flexbox?">
+        <meta property="og:description" content="Practices from the What the Flexbox? course taught by Wesbos in his web.">
+        <!-- *** TWITTER *** -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@said_alrove">
+        <meta name="twitter:image" content="https://github.com/said-alrove/what-the-flexbox/assets/png/open-graph.png">
+        <meta name="twitter:image:alt" content="What the Flexbox? logo's course">
+        <meta name="twitter:title" content="Nesting | What the Flexbox?">
+        <meta name="twitter:description" content="Practices from the What the Flexbox? course taught by Wesbos in his web.">
+        <!-- *** ICONS *** -->
+        <link rel="apple-touch-icon" href="https://github.com/said-alrove/what-the-flexbox/assets/icons/apple-touch-icon.png">
+        <link rel="shortcut icon" href="https://github.com/said-alrove/what-the-flexbox/assets/icons/icon-192.png"> 
+        <link rel="icon" href="https://github.com/said-alrove/what-the-flexbox/assets/icons/icon-192.png" type="img/png" sizes="192x192">
+        <!-- *** RESET *** -->
+        <link rel="preload" href="https://github.com/said-alrove/what-the-flexbox/styles/normalize.css" as="style">
+        <link rel="stylesheet" href="https://github.com/said-alrove/what-the-flexbox/styles/normalize.css">
+        <!-- *** FONTAWESOME *** -->
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- *** STYLES *** -->
+        <link rel="preload" href="https://github.com/said-alrove/what-the-flexbox/styles/app.css" as="style">
+        <link rel="stylesheet" href="https://github.com/said-alrove/what-the-flexbox/styles/app.csss">
+        <!-- *** EXTRA *** -->
+        <link rel="canonical" href="https://github.com/said-alrove/what-the-flexbox">
+    </head>
+    <body class="is-hidden">
+        <!-- *** PRELOADER *** -->
+        <div class="is-centered" id="onload">
+            <div class="lds-ring">
+                <div>
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="container">
+            <header class="header-container ly-basics">
+                <h1 class="header__heading">
+                    Nesting Flexbox for vertical and horizontal centering
+                </h1>
+            </header>
+            <nav class="nav-container ly-basics">
+                <a href="#" class="toggle-nav">
+                    <svg class="w-6 h-6 toggle-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg> 
+                    <span class="toggle-nav-span">
+                        Menu
+                    </span>
+                </a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="https://github.com/said-alrove/what-the-flexbox/index.html" class="nav__link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://github.com/said-alrove/what-the-flexbox/nesting(1).html" class="nav__link">
+                            1st page
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://github.com/said-alrove/what-the-flexbox/nesting(2).html" class="nav__link">
+                            2nd page
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://github.com/said-alrove/what-the-flexbox/columns.html" class="nav__link">
+                            3rd page
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://github.com/said-alrove/what-the-flexbox/form.html" class="nav__link">
+                            4th page
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="https://github.com/said-alrove/what-the-flexbox/app.html" class="nav__link">
+                            5th page
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item-icon">
+                        <a href="https://www.instagram.com/said.alrove" target="_blank" class="nav__link nav__link-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item-icon">
+                        <a href="https://www.facebook.com/said.alrove" target="_blank" class="nav__link nav__link-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item-icon">
+                        <a href="https://twitter.com/said_alrove" target="_blank" class="nav__link nav__link-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item-icon">
+                        <a href="https://github.com/said-alrove" target="_blank" class="nav__link nav__link-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="main-container">
+                <div class="nesting-two">
+                    <section class="card-container">
+                        <header class="card__header">
+                            <h2 class="card__heading">Cat</h2>
+                        </header>
+                        <div class="card__content">
+                            <p class="card__info">
+                                Common, yet regarded by many as the worst house pet.
+                            </p>
+                            <ul class="card__list">
+                                <li class="card__item">
+                                    Scratches everything
+                                </li>
+                                <li class="card__item">
+                                    Kind of a bummer
+                                </li>
+                            </ul>
+                            <span class="card__price">
+                                Free
+                            </span>
+                            <a href="#" class="card__btn">
+                                😼 Really?
+                            </a>
+                        </div>
+                    </section> <!-- .CARD-CONTAINER -->
+                    <section class="card-container">
+                        <header class="card__header">
+                            <h2 class="card__heading">Dog</h2>
+                        </header>
+                        <div class="card__content">
+                            <p class="card__info">
+                                Loving, gentie and caring. Dogs are the best house pet to have and will increase hapiness ten fold.
+                            </p>
+                            <ul class="card__list">
+                                <li class="card__item">
+                                    Super fun
+                                </li>
+                                <li class="card__item">
+                                    Friends love them
+                                </li>
+                                <li class="card__item">
+                                    Plays games
+                                </li>
+                                <li class="card__item">
+                                    Not a cat
+                                </li>
+                            </ul>
+                            <span class="card__price">
+                                $90
+                            </span>
+                            <a href="#" class="card__btn">
+                                🐶 Best Deal!
+                            </a>
+                        </div>
+                    </section> <!-- .CARD-CONTAINER -->
+                    <section class="card-container">
+                        <header class="card__header">
+                            <h2 class="card__heading">Fish</h2>
+                        </header>
+                        <div class="card__content">
+                            <p class="card__info">
+                                Cheap n' easy
+                            </p>
+                            <ul class="card__list">
+                                <li class="card__item">
+                                    Eats flakes
+                                </li>
+                                <li class="card__item">
+                                    Cop out
+                                </li>
+                                <li class="card__item">
+                                    Replaceable
+                                </li>
+                            </ul>
+                            <span class="card__price">
+                                $3
+                            </span>
+                            <a href="#" class="card__btn">
+                                🐟
+                            </a>
+                        </div>
+                    </section> <!-- .CARD-CONTAINER-->
+                </div>
+            </main>
+            <footer class="footer-container ly-basics">
+                <p class="footer__content">
+                    <span class="footer__span">Alrove</span> 2021 - Copyright &copy;
+                </p>
+            </footer>
+        </div>
+        <!-- *** JQUERY *** -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <!-- *** STUFF *** -->
+        <script>
+            $(function(){
+                $('.toggle-nav').on('click', function(){
+                    $('.nav-container .nav__list').toggleClass('open');
+                });
+            });
+
+            window.onload = function (){
+            $('#onload').fadeOut();
+            $('body').removeClass('is-hidden');
+            }
+        </script>
+    </body>
+</html>

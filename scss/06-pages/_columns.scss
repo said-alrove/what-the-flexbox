@@ -1,0 +1,36 @@
+//********************************* 
+//* COLUMNS 
+//*********************************
+.columns {
+    &-container {
+        @include less.flexbox($dir: column, $gap: 2rem);
+        @include less.query($device: 'tablet', $size: 'md') {
+            @include less.flexbox
+            (
+                $display: false, 
+                $dir: row,
+                $wrap: wrap,
+                $jt-content: center,
+            );
+        }
+    }
+
+    $_fs: 1rem;
+
+    &__item {
+        flex-basis: 15rem;
+        @include less.flexbox($jt-content: center, $al-items: center);
+        padding: 1em;
+        font-size: $_fs * 2.5;
+        background-color: map.get(abs.$alpha, 'white-200');
+        color: map.get(abs.$clr, 'white');
+        @include less.query($device: 'tablet', $size: 'md') {
+            flex-basis: calc(33.33% - 1.5rem);
+            block-size: 15rem;
+        }
+    }
+
+    &__item--small { font-size: $_fs * 2; }
+
+    &__item--large { font-size: $_fs * 3; }
+}

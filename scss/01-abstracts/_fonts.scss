@@ -1,0 +1,12 @@
+@use 'sass:list';
+@use 'sass:string';
+//********************************* 
+//* FONTS 
+//*********************************
+$spacing: .2em;
+$main-font: Arial, Helvetica, sans-serif;
+$form-font: string.quote('Courier New'), Courier, monospace;
+$ff: (
+    'main': $main-font,
+    'form': $form-font
+);

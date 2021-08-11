@@ -1,0 +1,18 @@
+//********************************* 
+//* UTILITIES 
+//*********************************
+.container {
+    @include less.flexbox($dir: column);
+    margin: 4rem auto;
+    inline-size: clamp(30rem, 90%, 114rem);
+}
+
+.ly-basics {
+    margin-block-end: map.get(abs.$ly, 'margin-block');
+    padding: map.get(abs.$ly, 'padding');
+    text-align: center;
+    border-radius: map.get(abs.$ly, 'rounded');
+    background-color: map.get(abs.$alpha, 'black-200');
+    color: map.get(abs.$clr, 'white');
+    overflow: hidden;
+}

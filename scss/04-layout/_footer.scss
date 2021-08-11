@@ -1,0 +1,20 @@
+//********************************* 
+//* FOOTER 
+//*********************************
+.footer {
+    &-container {
+        order: 4;
+        @include less.query($device: 'tablet', $size: 'sm') {
+            order: initial;
+        }
+    }
+
+    &__content { letter-spacing: abs.$spacing; }
+
+    &__span { 
+        font: {
+            weight: 700;
+            variant: small-caps;
+        }
+    }
+}

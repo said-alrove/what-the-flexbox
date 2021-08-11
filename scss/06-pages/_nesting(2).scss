@@ -1,0 +1,95 @@
+//********************************* 
+//* NESTING - 2 
+//*********************************
+.nesting {
+    &-two {
+        $_flex-gap: map.get(abs.$ly, 'margin-block') * 2;
+        @include less.flexbox
+        (
+            $wrap: wrap, 
+            $jt-content: center, 
+            $al-items: center, 
+            $gap: $_flex-gap
+        );
+        margin: map.get(abs.$ly, 'margin-block') auto;
+        max-inline-size: 90rem;
+        padding: map.get(abs.$ly, 'padding');
+        font-size: 1.8rem;
+        text-align: center;
+        @include less.query($device: 'tablet', $size: 'md') {
+            @include less.flexbox($display: false, $wrap: nowrap);   
+        }
+    }
+}
+
+.card {
+    $_flex-gap: 2.5rem;
+    &-container {
+        @include less.flexbox
+        (
+            $dir: column, 
+            $jt-content: center, 
+            $gap: $_flex-gap
+        );
+        inline-size: 100%;
+        padding: map.get(abs.$ly, 'padding');
+        border-radius: map.get(abs.$ly, 'rounded');
+        background-color: map.get(abs.$alpha, 'white-300');
+        transition: abs.$trans-300;
+        @include less.query($device: 'tablet', $size: 'sm') {
+            max-inline-size: 30rem;
+        }
+
+        &:hover {
+            background-color: map.get(abs.$alpha, 'white-200');
+            @include less.query($device: 'desktop', $size: 'sm') {
+                transform: translateY(-2.5%);
+            }
+        }
+
+        &:nth-child(odd) { block-size: 60rem; }
+
+        &:nth-child(even) { 
+            order: 1;
+            block-size: 70rem; 
+            @include less.query($device: 'tablet', $size: 'md') {
+                order: initial;
+            }
+        }
+    }
+
+    &__heading { text-transform: capitalize; }
+    
+    &__content {
+        @include less.flexbox($dir: column, $gap: $_flex-gap);
+    }
+
+    &__item {
+        padding: .5em;
+        border-bottom: .1rem solid map.get(abs.$clr, 'gray');
+        text-align: center;
+        line-height: 1.5em;
+    }
+
+
+    &__price {
+        font: {
+            size: 5rem;
+            weight: bold;
+        }
+        display: block;
+    }
+
+    &__btn {
+        align-self: center;
+        padding: 1em;
+        border-radius: map.get(abs.$ly, 'rounded');
+        background-color: map.get(abs.$clr, 'lt', 'yellow-200');
+        color: initial;
+        transition: abs.$trans-300;
+
+        &:hover {
+            background-color: map.get(abs.$clr, 'dk', 'yellow-100');
+        }
+    }
+}
