@@ -10,7 +10,20 @@
         <meta name="author" content="Said Alejandro">
         <meta name="copyright" content="Alrove 2021 - Copyright &copy;">
         <title>Home | What the Flexbox?</title>
-        <!-- *** FACEBOOK *** -->
+        <!-- === PERFORMANCE === -->
+        <link rel="preconnect dns-prefetch" href="https://cdnjs.com"> <!-- === IE SUPPORT === -->
+        <link rel="preconnect" href="https://cdnjs.com">
+        <link rel="preload" href="https://code.jquery.com/jquery-3.5.1.js" as="script">
+        <link rel="prefetch" href="https://said-alrove.github.io/what-the-flexbox/nesting(1).html" as="document">
+        <!-- === ICONS === -->
+        <link rel="apple-touch-icon" href="https://said-alrove.github.io/what-the-flexbox/assets/icons/apple-touch-icon.png">
+        <link rel="shortcut icon" href="https://said-alrove.github.io/what-the-flexbox/assets/icons/icon-192.png"> 
+        <link rel="icon" href="https://said-alrove.github.io/what-the-flexbox/assets/icons/icon-192.png" type="img/png" sizes="192x192">
+        <!-- === STYLES === -->
+        <link rel="stylesheet" href="https://said-alrove.github.io/what-the-flexbox/styles/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://said-alrove.github.io/what-the-flexbox/styles/app.css">
+        <!-- === FACEBOOK === -->
         <meta property="og:url" content="https://said-alrove.github.io/what-the-flexbox">
         <meta property="og:locale" content="en_US">
         <meta property="og:image" content="https://said-alrove.github.io/what-the-flexbox/assets/png/open-graph.png">
@@ -20,32 +33,18 @@
         <meta property="og:image:alt" content="What the Flexbox? course logo">
         <meta property="og:title" content="Home | What the Flexbox?">
         <meta property="og:description" content="Practices from the 'What the Flexbox?' course taught by Wesbos on his web.">
-        <!-- *** TWITTER *** -->
+        <!-- === TWITTER === -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:creator" content="@said_alrove">
         <meta name="twitter:image" content="https://said-alrove.github.io/what-the-flexbox/assets/png/open-graph.png">
         <meta name="twitter:image:alt" content="What the Flexbox? logo's course">
         <meta name="twitter:title" content="Home | What the Flexbox?">
         <meta name="twitter:description" content="Practices from the 'What the Flexbox?' course taught by Wesbos on his web.">
-        <!-- *** ICONS *** -->
-        <link rel="apple-touch-icon" href="https://said-alrove.github.io/what-the-flexbox/assets/icons/apple-touch-icon.png">
-        <link rel="shortcut icon" href="https://said-alrove.github.io/what-the-flexbox/assets/icons/icon-192.png"> 
-        <link rel="icon" href="https://said-alrove.github.io/what-the-flexbox/assets/icons/icon-192.png" type="img/png" sizes="192x192">
-        <!-- *** RESET *** -->
-        <link rel="preload" href="https://said-alrove.github.io/what-the-flexbox/styles/normalize.css" as="style">
-        <link rel="stylesheet" href="https://said-alrove.github.io/what-the-flexbox/styles/normalize.css">
-        <!-- *** FONTAWESOME *** -->
-        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" as="style">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <!-- *** STYLES *** -->
-        <link rel="preload" href="https://said-alrove.github.io/what-the-flexbox/styles/app.css" as="style">
-        <link rel="stylesheet" href="https://said-alrove.github.io/what-the-flexbox/styles/app.css">
-        <!-- *** EXTRA *** -->
+        <!-- === EXTRA === -->
         <link rel="canonical" href="https://said-alrove.github.io/what-the-flexbox">
-        <link rel="prefetch" href="https://said-alrove.github.io/what-the-flexbox/nesting(1).html" as="document">
     </head>
     <body class="is-hidden">
-        <!-- *** PRELOADER *** -->
+        <!-- === PRELOADER === -->
         <div class="is-centered" id="onload">
             <div class="lds-ring">
                 <div>
@@ -134,7 +133,7 @@
                     <p class="details__text">
                         Sign up today to grab all the videos and exercises!.
                     </p>
-                </div> <!-- .DETAILS-CONTAINER -->
+                </div> <!-- === .DETAILS-CONTAINER === -->
                 <div class="inputs-container ly-basics">
                     <form action="#" class="sign-up">
                         <input 
@@ -147,7 +146,7 @@
                             type="submit" 
                             value="Submit">
                     </form>
-                </div> <!-- .INPUTS-CONTAINER-->
+                </div> <!-- === .INPUTS-CONTAINER === -->
             </main>
             <footer class="footer-container ly-basics">
                 <p class="footer__content">
@@ -155,9 +154,9 @@
                 </p>
             </footer>
         </div>
-        <!-- *** JQUERY *** -->
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <!-- *** STUFF *** -->
+        <!-- === JQUERY === -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin=""></script>
+        <!-- === STUFF === -->
         <script>
             $(function(){
                 $('.toggle-nav').on('click', function(){
