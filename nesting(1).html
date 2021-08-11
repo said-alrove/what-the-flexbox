@@ -125,7 +125,12 @@
             <main class="main-container ly-basics nesting-container">
                 <div class="nesting-one">
                     <figure class="hero-container">
-                        <img src="https://picsum.photos/900/450" alt="">
+                        <picture>
+                        <source type="img/webp" srcset="
+                                https://picsum.photos/450/225.webp 450w,
+                                https://picsum.photos/900/450.webp 900w">                            
+                        <img src="https://picsum.photos/900/450.webp" alt="">
+                    </picture>
                     </figure>
                     <nav class="nav-container">
                         <ul class="nav__list">
