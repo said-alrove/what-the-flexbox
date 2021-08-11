@@ -1,4 +1,4 @@
-# [easy-recipe](https://said-alrove.github.io/easy-recipe/)
+# [what-the-flexbox](https://said-alrove.github.io/what-the-flexbox/)
 This was a project based on the practices given from the [What the Flexbox?](https://wesbos.com/) course taught by Wesbos on his [web](https://flexbox.io/).
 
 ## Project's preview
