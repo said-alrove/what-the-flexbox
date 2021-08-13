@@ -50,6 +50,7 @@ I'd like to mention a few things that I figured out while researching more infor
     - **Prefetch** is something similar to preload but with low priority, this should be used for loading resources that the user might need in the future (when going to another page), here we can also use the **type** attribute.
     - **Prerender** at the beginning was used for rendering pages that the user might need in the future (similar to prefetch, but instead of pre-caching a file that other page might need, it renders the full page with all the assets it needs), but because this could provoke problems in the bandwidth of the users when rendering a full page in the background, Google changed the behavior of it, and now what it does is basically similar to **prefetch**, but it prefetches the assets the page will need in the cache without executing them (e.g. Js files) instead of just prefetching specific files.
 * Something importat to mention too is that when preconnecting cross origin servers, we should use the **crossorigin** attribute, the value of it could be either **anonymous** or **use-credentials** (If you're not working with Js or things where you might use cookies, you'll just need to declare "anonymous"). Due to anonymous is the default value, you can give the value's attribute empty, or just declare the attribute as a boolean (if it's declared is true, if not, is false), for example:
+
 ```
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 ```
@@ -57,6 +58,7 @@ Or:
 ```
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 ```
+
     - If you'd like to know where all this information come from, check these articles:
         - [Link types: preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload)
         - [Preload, Prefetch and Preconnect: Speed Up your Website with Resource Hints](https://blog.dareboost.com/en/2020/05/preload-prefetch-preconnect-resource-hints/)
@@ -64,6 +66,7 @@ Or:
         - [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
         - [HTML attribute: crossorigin](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin)
         - [Introducing NoState prefetch](https://developers.google.com/web/updates/2018/07/nostate-prefetch)
+        
 * Now, earlier in this section I mentioned that I used the 7-1 pattern for this project and that I already felt confident with SMACSS, something I'd like to comment is that obviously, the kind of structure these patterns/architectures offer is not something we should follow literally, we should take the things that we might use the most according to our needs, and remove those that we won't use, right now I'm just practicing with the architectures that are already designed, but in future projects, once I know the most popular (7-1, SMACSS, and ITCSS) I'll start making combinations according to what I need the most. 
 
 * Something else I forgot to mention was that in the Lighthouse report I saw some issues with respect to the links to my social media, it was basically that when using anchor elements with the **_blank** target's value, we should use the **rel** attribute with the value **noreferer** or **noopener** because that way we can avoid problems with respect to our page performance (the other page may run on the same process like ours, and if that page runs a lot of Javascript, the performance of our page will be affected). For more information [check this out](https://web.dev/external-anchors-use-rel-noopener/?utm_source=lighthouse&utm_medium=lr).
@@ -72,7 +75,7 @@ Or:
 
 ## Reports
 
-> In this section I was planning to take screenshots to the **Lighthouse** and **Gtmetrix** reports for a full understanding of the page's quality, but due to I had problems with respect to the reports for things that I unknown I'll just add the Lighthouse report for now.
+> In this section I was planning to take screenshots to the **Lighthouse** and **Gtmetrix** reports for a full understanding of the page's quality, but due to I had problems with respect to the reports for things that I unknown, I'll just add the Lighthouse report for now.
 
 ### Lighthouse
 ![](readme/lighthouse.png)
