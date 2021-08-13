@@ -66,14 +66,13 @@ Or:
 ```
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 ```
-
-    - If you'd like to know where all this information come from, check these articles:
-        - [Link types: preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload)
-        - [Preload, Prefetch and Preconnect: Speed Up your Website with Resource Hints](https://blog.dareboost.com/en/2020/05/preload-prefetch-preconnect-resource-hints/)
-        - [Prefetching, preloading and prebrowsing](https://css-tricks.com/prefetching-preloading-prebrowsing/)
-        - [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-        - [HTML attribute: crossorigin](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin)
-        - [Introducing NoState prefetch](https://developers.google.com/web/updates/2018/07/nostate-prefetch)
+- If you'd like to know where all this information come from, check these articles:
+    - [Link types: preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload)
+    - [Preload, Prefetch and Preconnect: Speed Up your Website with Resource Hints](https://blog.dareboost.com/en/2020/05/preload-prefetch-preconnect-resource-hints/)
+    - [Prefetching, preloading and prebrowsing](https://css-tricks.com/prefetching-preloading-prebrowsing/)
+    - [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+    - [HTML attribute: crossorigin](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/crossorigin)
+    - [Introducing NoState prefetch](https://developers.google.com/web/updates/2018/07/nostate-prefetch)
 
 * Now, earlier in this section I mentioned that I used the 7-1 pattern for this project and that I already felt confident with SMACSS, something I'd like to comment is that obviously, the kind of structure these patterns/architectures offer is not something we should follow literally, we should take the things that we might use the most according to our needs, and remove those that we won't use, right now I'm just practicing with the architectures that are already designed, but in future projects, once I know the most popular (7-1, SMACSS, and ITCSS) I'll start making combinations according to what I need the most. 
 
