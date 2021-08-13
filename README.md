@@ -4,7 +4,7 @@ This was a project based on the practices given from the [What the Flexbox?](htt
 ## Table of contents
 * [Preview](#preview)
 * [What I learned](#what-i-learned)
-* [Reports]
+* [Reports](#reports)
     - [Lighthouse](#lighthouse)
 * [Open Graph](#open-graph)
     - [Facebook](#facebook)
