@@ -37,6 +37,7 @@ I'd like to mention a few things that I figured out while researching more infor
 > Here are a couple of screenshots to illustrate in better way everything I'm talking about:
 
 ![](readme/7-1pattern(1).png)
+
 ![](readme/7-1pattern(2).png)
 * Now, with respect to new things I learned ... I was reading about the [pseudo-clases](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) and something that was useful in a specific part of the project, was the use of the keywords **even** and **odd** when using the pseudo-classes **nth-child**.
 
