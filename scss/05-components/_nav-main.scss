@@ -1,0 +1,49 @@
+//********************************* 
+//* NAV__LIST--MAIN
+//*********************************
+.nav {
+    &__list--main {      
+        display: none;       
+        @include less.query($device: 'tablet', $size: 'sm') {
+            // Even when I set the display to flex in the block, I have to set it here again due to this modifier has as default a display of none, and because the components are after the layout, that rule overwrites the display of flex
+            @include less.flexbox($wrap: wrap);
+        }
+        @include less.query($device: 'tablet', $size: 'lg') {
+            @include less.flexbox($wrap: nowrap);
+        }
+
+
+        .nav__item { 
+            @include less.query($device: 'tablet', $size: 'sm') {
+                flex-basis: 50%;
+            }
+            @include less.query($device: 'tablet', $size: 'lg') {
+                flex-basis: 100%;
+            }
+    
+            &--icon {
+                @include less.query($device: 'tablet', $size: 'sm') {
+                    flex-basis: 25%;
+                }
+            }
+        }
+    }
+
+    &__list--main.open {
+        @include less.flexbox($dir: column, $wrap: wrap);
+    }
+}
+
+.toggle-nav {
+    @include less.flexbox($jt-content: center, $al-items: center);
+    color: map.get(abs.$clr, 'white');
+    padding: map.get(abs.$ly, 'padding');
+    @include less.query($device: 'tablet', $size: 'sm') {
+        display: none;
+    }
+
+    &-icon,
+    &-span { margin-inline: .5em; }
+
+    &-icon { inline-size: 2rem; }
+}

@@ -1,8 +1,10 @@
 //********************************* 
-//* NESTING - 2 
+//* NESTING (2)
 //*********************************
+
+//* Due to I names both pages similar I had problems when creating unique classes (there are two classes with the keyword "nesting", but one refers to the nesting(1) page, and the other to the nesting(2) page ... in essence there's not too much problem because the classes don't have te exact same name, but you know, if this would a mistake repeated to many times across the two pages, would be difficult to understand everything.
 .nesting {
-    &-two {
+    &-container {
         $_flex-gap: map.get(abs.$ly, 'margin-block') * 2;
         @include less.flexbox
         (
@@ -22,6 +24,9 @@
     }
 }
 
+//********************************* 
+//* NESTING (2) - CARD
+//*********************************
 .card {
     $_flex-gap: 2.5rem;
     &-container {

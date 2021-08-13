@@ -14,7 +14,7 @@
         <link rel="preconnect dns-prefetch" href="https://cdnjs.com"> <!-- === IE SUPPORT === -->
         <link rel="preconnect" href="https://cdnjs.com">
         <link rel="preload" href="https://code.jquery.com/jquery-3.5.1.js" as="script">
-        <link rel="prefetch" href="https://said-alrove.github.io/what-the-flexbox/nesting(2).html" as="document">
+        <link rel="prerender" href="https://said-alrove.github.io/what-the-flexbox/nesting(2).html" as="document">
         <!-- === ICONS === -->
         <link rel="apple-touch-icon" href="https://said-alrove.github.io/what-the-flexbox/assets/icons/apple-touch-icon.png">
         <link rel="shortcut icon" href="https://said-alrove.github.io/what-the-flexbox/assets/icons/icon-192.png"> 
@@ -22,7 +22,7 @@
         <!-- === STYLES === -->
         <link rel="stylesheet" href="https://said-alrove.github.io/what-the-flexbox/styles/normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="https://said-alrove.github.io/what-the-flexbox/styles/app.css">
+        <link rel="stylesheet" href="styles/app.css">
         <!-- === FACEBOOK === -->
         <meta property="og:url" content="https://said-alrove.github.io/what-the-flexbox">
         <meta property="og:locale" content="en_US">
@@ -69,7 +69,7 @@
                         Menu
                     </span>
                 </a>
-                <ul class="nav__list">
+                <ul class="nav__list nav__list--main">
                     <li class="nav__item">
                         <a href="https://said-alrove.github.io/what-the-flexbox/index.html" class="nav__link">
                             Home
@@ -100,73 +100,71 @@
                             5th page
                         </a>
                     </li>
-                    <li class="nav__item nav__item-icon">
+                    <li class="nav__item nav__item--icon">
                         <a href="https://www.instagram.com/said.alrove" rel="noopener" target="_blank" class="nav__link nav__link-icon">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
-                    <li class="nav__item nav__item-icon">
+                    <li class="nav__item nav__item--icon">
                         <a href="https://www.facebook.com/said.alrove" rel="noopener" target="_blank" class="nav__link nav__link-icon">
                             <i class="fab fa-facebook"></i>
                         </a>
                     </li>
-                    <li class="nav__item nav__item-icon">
+                    <li class="nav__item nav__item--icon">
                         <a href="https://www.twitter.com/said_alrove" rel="noopener" target="_blank" class="nav__link nav__link-icon">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
-                    <li class="nav__item nav__item-icon">
+                    <li class="nav__item nav__item--icon">
                         <a href="https://www.github.com/said-alrove" rel="noopener" target="_blank" class="nav__link nav__link-icon">
                             <i class="fab fa-github"></i>
                         </a>
                     </li>
                 </ul>
             </nav>
-            <main class="main-container ly-basics nesting-container">
-                <div class="nesting-one">
-                    <figure class="hero-container">
-                        <picture>
-                        <source type="img/webp" srcset="
-                                https://picsum.photos/450/225.webp 450w,
-                                https://picsum.photos/900/450.webp 900w">                            
-                        <img src="https://picsum.photos/900/450.webp" alt="">
-                    </picture>
-                    </figure>
-                    <nav class="nav-container">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">
-                                    <span class="nav__arrow">←</span>
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">
-                                    <span>Item 1</span>
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">
-                                    <span>Item 2</span>
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">
-                                    <span>Item 3</span>
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">
-                                    <span>Item 4</span>
-                                </a>
-                            </li>
-                            <li class="nav__item">
-                                <a href="#" class="nav__link">
-                                    <span class="nav__arrow">→</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+            <main class="main-container ly-basics main-container-nesting">
+                <figure class="hero-container">
+                    <picture>
+                    <source type="img/webp" srcset="
+                            https://picsum.photos/450/225.webp 450w,
+                            https://picsum.photos/900/450.webp 900w">                            
+                    <img src="https://picsum.photos/900/450.webp" alt="">
+                </picture>
+                </figure>
+                <nav class="nav-container">
+                    <ul class="nav__list nav__list--nesting">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <span class="nav__arrow">←</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <span>Item 1</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <span>Item 2</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <span>Item 3</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <span>Item 4</span>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <span class="nav__arrow">→</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </main>
             <footer class="footer-container ly-basics">
                 <p class="footer__content">
@@ -180,7 +178,7 @@
         <script>
             $(function(){
                 $('.toggle-nav').on('click', function(){
-                    $('.nav-container .nav__list').toggleClass('open');
+                    $('.nav__list--main').toggleClass('open');
                 });
             });
 
