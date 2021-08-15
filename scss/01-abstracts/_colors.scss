@@ -22,6 +22,7 @@ $clr: (
     'black': hsl(0deg, 0%, 0%),
 );
 
+//* For background transparency... 👇
 $alpha: (
     'black-200': color.change(map.get($clr, 'black'), $alpha: .2),
     'black-300': color.change(map.get($clr, 'black'), $alpha: .3),

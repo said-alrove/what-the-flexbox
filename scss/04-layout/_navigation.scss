@@ -3,8 +3,10 @@
 //*********************************
 .nav {
     &-container { 
+        //* NOTE!: The order of the elements will look different in mobile in contrast to desktop, this is because the navigation looks weird below the header (as it's in the original order) when is deployed, therefore put the navigation on top make the design better.
         order: 1;
         padding: 0; 
+        @extend %layout-basics;
         @include less.query($device: 'tablet', $size: 'sm') {
             order: initial;
         }
@@ -22,8 +24,9 @@
         display: inline-block;
         padding: map.get(abs.$ly, 'padding');
         inline-size: 100%;
-        color: map.get(abs.$clr, 'white');
+        font-size: 1.6rem;
         letter-spacing: abs.$spacing;
+        color: map.get(abs.$clr, 'white');
         transition: abs.$trans-300;
 
         &:hover { background-color: map.get(abs.$alpha, 'black-300'); }

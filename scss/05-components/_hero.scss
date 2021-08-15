@@ -3,6 +3,7 @@
 //*********************************
 .hero {
     &-container {
+        @extend %layout-basics;
         img {
             margin-block: map.get(abs.$ly, 'margin-block');
             inline-size: 90%;

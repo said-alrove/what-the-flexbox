@@ -3,7 +3,10 @@
 //*********************************
 .footer {
     &-container {
+        //* NOTE!: The order of the elements will look different in mobile in contrast to desktop, this is because the navigation looks weird below the header (as it's in the original order) when is deployed, therefore put the navigation on top make the design better.
+        //* NOTE!: The reason why the order is been specified even in elements that won't have any modification (like this one) is just to be sure that nothing's out of place.
         order: 4;
+        @extend %layout-basics;
         @include less.query($device: 'tablet', $size: 'sm') {
             order: initial;
         }

@@ -2,7 +2,10 @@
 //* DETAILS 
 //*********************************
 .details {
-    &-container { font-weight: bold; }
+    &-container { 
+        font-weight: bold; 
+        @extend %layout-basics;
+    }
 
     &__text:first-of-type {
         margin-block-end: map.get(abs.$ly, 'margin-block');
@@ -12,6 +15,16 @@
 //********************************* 
 //* INPUTS
 //*********************************
+.inputs {
+    &-container {
+        //* This is for "margin collapsing".
+        // display: inline-block;
+        // inline-size: 100%;
+        @extend %layout-basics;
+    }
+}
+
+//* This is the formulario... 👇
 .sign-up {
     @include less.flexbox($dir: column, $gap: 3rem);
     @include less.query($device: 'tablet', $size: 'sm') {
