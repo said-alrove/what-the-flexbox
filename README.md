@@ -1,7 +1,7 @@
 # [what-the-flexbox](https://said-alrove.github.io/what-the-flexbox/)
 This was a project based on the practices given from the [What the Flexbox?](https://wesbos.com/) course taught by Wesbos on his [web](https://flexbox.io/).
 
-> **Disclaimer:** I'm starting to learn how to use **Git/Github** correctly, therefore there'll be plenty of pull requests and commits as tests in this repository, however, *this won't represent my way of working forever*, I'll learn more things along the way as always :D!.
+> **Disclaimer:** I'm starting to learn how to use **Git/Github** correctly, therefore there'll be plenty of pull requests, commits and other stuff as tests in this repository, however, *this won't represent my way of working forever*, I'll learn more things along the way as always :D!.
 
 ## Table of contents
 * [Preview](#preview)
