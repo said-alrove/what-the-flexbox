@@ -5,6 +5,7 @@
     &-container {
         @include less.flexbox($dir: column, $gap: 2rem);
         margin-block: map.get(abs.$ly, 'margin-block');
+        padding: map.get(abs.$ly, 'padding-inline');
         @include less.query($device: 'tablet', $size: 'md') {
             @include less.flexbox
             (
