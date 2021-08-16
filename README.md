@@ -19,7 +19,7 @@ This was a project based on the practices given from the [What the Flexbox?](htt
 
 Well, certainly this was an interesting project due to it's the first time I have had such a great opportunity to use a SASS architecture.
 
-> I used the **7-1 pattern** with this project due to I had already practiced enough with the **SMACSS** architecture to feel confident enough with it.
+> **Note:** I used the **7-1 pattern** with this project due to I had already practiced enough with the **SMACSS** architecture to feel confident enough with it.
 
 I'd like to mention a few things that I figured out while researching more information about the patterns/architectures for SASS projects:
 
@@ -69,6 +69,7 @@ Or:
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 ```
 - If you'd like to know where all this information come from, check these articles:
+
     - [Link types: preload](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload)
     - [Preload, Prefetch and Preconnect: Speed Up your Website with Resource Hints](https://blog.dareboost.com/en/2020/05/preload-prefetch-preconnect-resource-hints/)
     - [Prefetching, preloading and prebrowsing](https://css-tricks.com/prefetching-preloading-prebrowsing/)
@@ -85,19 +86,21 @@ Or:
 > **P.D** After uploading this project I continued reading more about different methodologies for scaling projects, and one of my favorites lectures was [Chainable BEM modifiers](https://webuild.envato.com/blog/chainable-bem-modifiers/) from **We build Envato** because thanks to it I could figure out how to solve the problem with the navigation and its reusability in a fancier way, I implemented some of the things are in that article, such as the use of helpers and states with a prefix (u-/h- for helpers and is- for states) and the order I should follow when ordering those classes in order to avoid unwanted overwrites (BEV, modifiers, helpers and states).
 
 > Other lectures that helped me to understand more in detail about BEM were the following: 
-    - [BEM introduction](http://getbem.com/introduction/)
-    - [How to scale and maintain legacy CSS with SASS and SMACSS](https://webuild.envato.com/blog/how-to-scale-and-maintain-legacy-css-with-sass-and-smacss/)
-    - [Maintainable CSS with BEM](https://www.integralist.co.uk/posts/bem/#4)
-    - [Used and Abused – CSS Inheritance and Our Misuse of the Cascade](https://www.phase2technology.com/blog/used-and-abused-css)
+
+- [BEM introduction](http://getbem.com/introduction/)
+- [How to scale and maintain legacy CSS with SASS and SMACSS](https://webuild.envato.com/blog/how-to-scale-and-maintain-legacy-css-with-sass-and-smacss/)
+- [Maintainable CSS with BEM](https://www.integralist.co.uk/posts/bem/#4)
+- [Used and Abused – CSS Inheritance and Our Misuse of the Cascade](https://www.phase2technology.com/blog/used-and-abused-css)
 
 > **Note:** something I'll start to do is attach all the articles and posts I read when making the project that helped me in some aspect of it at the end of the **What I learned** section.
 
 > **Note:** I'd like to comment that also, starting from this project, I'll start to read more about English grammar in order to improve the quality of these READMEs and all the other stuff where I include a message within it in order to explain about something (like commits, comments in the code, etc.). the lecture of this project was about a doubt that was intriguing me since a while:
-    - [Comma Before And](https://www.grammarly.com/blog/comma-before-and/)
+
+- [Comma Before And](https://www.grammarly.com/blog/comma-before-and/)
 
 ## Reports
 
-> In this section I was planning to take screenshots to the **Lighthouse** and **Gtmetrix** reports for a full understanding of the page's quality, but due to I had problems with respect to the reports for things that I unknown, I'll just add the Lighthouse report for now.
+> **Note:** In this section I was planning to take screenshots to the **Lighthouse** and **Gtmetrix** reports for a full understanding of the page's quality, but due to I had problems with respect to the reports for things that I unknown, I'll just add the Lighthouse report for now.
 
 ### Lighthouse
 ![](readme/lighthouse.png)
