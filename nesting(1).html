@@ -25,7 +25,7 @@
         <!-- === STYLES === -->
         <link rel="stylesheet" href="https://said-alrove.github.io/what-the-flexbox/styles/normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="https://said-alrove.github.io/what-the-flexbox/styles/app.css">
+        <link rel="stylesheet" href="styles/app.css">
         <!-- === FACEBOOK === -->
         <meta property="og:url" content="https://said-alrove.github.io/what-the-flexbox">
         <meta property="og:locale" content="en_US">
@@ -56,12 +56,12 @@
             </div>
         </div> 
         <div class="container">
-            <header class="header-container ly-basics">
+            <header class="header-container">
                 <h1 class="header__heading">
                     Nesting Flexbox for vertical and horizontal centering
                 </h1>
             </header>
-            <nav class="nav-container ly-basics">
+            <nav class="nav-container -order-1 u-padding-0">
                 <a href="#" class="toggle-nav">
                     <svg class="w-6 h-6 toggle-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -70,7 +70,7 @@
                         Menu
                     </span>
                 </a>
-                <ul class="nav__list nav__list--main">
+                <ul class="nav__list-main">
                     <li class="nav__item">
                         <a href="https://said-alrove.github.io/what-the-flexbox/index.html" class="nav__link">
                             Home
@@ -101,29 +101,29 @@
                             5th page
                         </a>
                     </li>
-                    <li class="nav__item nav__item--icon">
+                    <li class="nav__item -basis-25">
                         <a href="https://www.instagram.com/said.alrove" rel="noopener" target="_blank" class="nav__link nav__link-icon">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
-                    <li class="nav__item nav__item--icon">
+                    <li class="nav__item -basis-25">
                         <a href="https://www.facebook.com/said.alrove" rel="noopener" target="_blank" class="nav__link nav__link-icon">
                             <i class="fab fa-facebook"></i>
                         </a>
                     </li>
-                    <li class="nav__item nav__item--icon">
+                    <li class="nav__item -basis-25">
                         <a href="https://www.twitter.com/said_alrove" rel="noopener" target="_blank" class="nav__link nav__link-icon">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
-                    <li class="nav__item nav__item--icon">
+                    <li class="nav__item -basis-25">
                         <a href="https://www.github.com/said-alrove" rel="noopener" target="_blank" class="nav__link nav__link-icon">
                             <i class="fab fa-github"></i>
                         </a>
                     </li>
                 </ul>
             </nav>
-            <main class="main-container ly-basics main-container-nesting">
+            <main class="main-container">
                 <figure class="hero-container">
                     <picture>
                     <source type="img/webp" srcset="
@@ -132,42 +132,42 @@
                     <img src="https://picsum.photos/900/450.webp" alt="">
                 </picture>
                 </figure>
-                <nav class="nav-container">
-                    <ul class="nav__list nav__list--nesting">
+                <nav class="nav-container u-padding-0">
+                    <ul class="nav__list">
                         <li class="nav__item">
                             <a href="#" class="nav__link">
-                                <span class="nav__arrow">←</span>
+                                <span class="nav__icon">←</span>
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">
-                                <span>Item 1</span>
+                                Item 1
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">
-                                <span>Item 2</span>
+                                Item 2
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">
-                                <span>Item 3</span>
+                                Item 3
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">
-                                <span>Item 4</span>
+                                Item 4
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#" class="nav__link">
-                                <span class="nav__arrow">→</span>
+                                <span class="nav__icon">→</span>
                             </a>
                         </li>
                     </ul>
                 </nav>
             </main>
-            <footer class="footer-container ly-basics">
+            <footer class="footer-container">
                 <p class="footer__content">
                     <span class="footer__span">Alrove</span> 2021 - Copyright &copy;
                 </p>

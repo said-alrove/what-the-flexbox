@@ -1,0 +1,55 @@
+//********************************* 
+//* NAV-MAIN
+//*********************************
+.nav {
+    &-container {
+        //* NOTE!: The order of the elements will look different in mobile in contrast to desktop, this is because the navigation looks weird below the header (as it's in the original order) when is deployed, therefore put the navigation on top make the design better.        
+        order: -1;
+        @extend %layout-basics;
+        @include less.query($device: 'tablet', $size: 'sm') {
+            order: initial;
+        }
+    }
+
+    &__list {
+        &-main {
+            display: none;
+            @include less.query($device: 'tablet', $size: 'sm') {
+                @include less.flexbox($wrap: wrap);
+            }
+            @include less.query($device: 'tablet', $size: 'lg') {
+                @include less.flexbox($wrap: nowrap);
+            }
+    
+            .nav__item {
+                @include less.query($device: 'tablet', $size: 'sm') {
+                    flex-basis: 50%
+                }
+            }
+    
+            .-basis-25 {
+                @include less.query($device: 'tablet', $size: 'sm') {
+                    flex-basis: 25%;
+                }
+            }
+    
+            &.is-open {
+                @include less.flexbox($dir: column, $wrap: wrap);
+            }
+        }
+    }
+}
+
+.toggle-nav {
+    @include less.flexbox($jt-content: center, $al-items: center);
+    color: map.get(abs.$clr, 'white');
+    padding: map.get(abs.$ly, 'padding');
+    @include less.query($device: 'tablet', $size: 'sm') {
+        display: none;
+    }
+
+    &-icon,
+    &-span { margin-inline: .5em; }
+
+    &-icon { inline-size: 2rem; }
+}

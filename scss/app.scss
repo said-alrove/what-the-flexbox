@@ -31,6 +31,7 @@
 //*********************************
 @import 
     '03-base/base',
+    '03-base/extends',
     '03-base/helpers';
 
 //********************************* 
@@ -38,8 +39,7 @@
 //*********************************
 @import 
     '04-layout/header',
-    '04-layout/navigation',
-    '04-layout/main',
+    '04-layout/nav-main',
     '04-layout/footer';
 
 //********************************* 
@@ -47,7 +47,7 @@
 //*********************************
 @import 
     '05-components/loader',
-    '05-components/nav-main',
+    '05-components/navigation',
     '05-components/hero';
 
 //********************************* 
@@ -55,7 +55,6 @@
 //*********************************
 @import 
     '06-pages/index',
-    '06-pages/nesting(1)',
     '06-pages/nesting(2)',
     '06-pages/columns',
     '06-pages/form',

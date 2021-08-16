@@ -1,0 +1,13 @@
+%layout-basics {
+    //* NOTE!: The display and inline-size properties were declared in order to avoid the margin collapsing (it happened several times).
+    //* INFO: https://www.sitepoint.com/community/t/margin-collapse-and-how-to-get-rid-of-it/5460/4
+    display: inline-block;
+    margin-block: map.get(abs.$ly, 'margin-block');
+    padding: map.get(abs.$ly, 'padding');
+    inline-size: 100%;
+    text-align: center;
+    border-radius: map.get(abs.$ly, 'rounded');
+    background-color: map.get(abs.$alpha, 'black-200');
+    color: map.get(abs.$clr, 'white');
+    overflow: hidden;
+}

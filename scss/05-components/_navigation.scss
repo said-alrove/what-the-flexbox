@@ -1,0 +1,28 @@
+//********************************* 
+//* NAVIGATION 
+//*********************************
+.nav {
+    &-container { 
+        @extend %layout-basics;
+    }
+
+    &__list {
+        @include less.query($device: 'tablet', $size: 'sm') {
+            @include less.flexbox();
+        }
+    }
+
+    &__item { flex-grow: 1; }
+
+    &__link {
+        display: inline-block;
+        padding: map.get(abs.$ly, 'padding');
+        inline-size: 100%;
+        font-size: 1.6rem;
+        letter-spacing: abs.$spacing;
+        color: map.get(abs.$clr, 'white');
+        transition: abs.$trans-300;
+
+        &:hover { background-color: map.get(abs.$alpha, 'black-300'); }
+    }
+}
