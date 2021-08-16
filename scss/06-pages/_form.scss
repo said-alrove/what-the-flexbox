@@ -8,6 +8,7 @@
             $cols: repeat(2, 1fr),
             $gap: 1rem
         );
+        margin: map.get(abs.$ly, 'margin-block');
         padding: .5em;
         border: {
             width: .5em;
