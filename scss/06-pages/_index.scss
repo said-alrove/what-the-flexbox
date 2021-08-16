@@ -17,9 +17,6 @@
 //*********************************
 .inputs {
     &-container {
-        //* This is for "margin collapsing".
-        // display: inline-block;
-        // inline-size: 100%;
         @extend %layout-basics;
     }
 }
