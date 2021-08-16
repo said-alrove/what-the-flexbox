@@ -1,0 +1,8 @@
+//********************************* 
+//* CONTAINER 
+//*********************************
+.container {
+    @include less.flexbox($dir: column);
+    margin: 4rem auto;
+    inline-size: clamp(30rem, 90%, 114rem);
+}
