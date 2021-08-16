@@ -85,7 +85,7 @@ Or:
 
 > **P.D** After uploading this project I continued reading more about different methodologies for scaling projects, and one of my favorites lectures was [Chainable BEM modifiers](https://webuild.envato.com/blog/chainable-bem-modifiers/) from **We build Envato** because thanks to it I could figure out how to solve the problem with the navigation and its reusability in a fancier way, I implemented some of the things are in that article, such as the use of helpers and states with a prefix (u-/h- for helpers and is- for states) and the order I should follow when ordering those classes in order to avoid unwanted overwrites (BEV, modifiers, helpers and states).
 
-> Other lectures that helped me to understand more in detail about BEM were the following: 
+Other lectures that helped me to understand more in detail about BEM were the following: 
 
 - [BEM introduction](http://getbem.com/introduction/)
 - [How to scale and maintain legacy CSS with SASS and SMACSS](https://webuild.envato.com/blog/how-to-scale-and-maintain-legacy-css-with-sass-and-smacss/)
