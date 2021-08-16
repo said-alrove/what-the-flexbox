@@ -92,7 +92,7 @@ Other lectures that helped me to understand more in detail about BEM were the fo
 - [Maintainable CSS with BEM](https://www.integralist.co.uk/posts/bem/#4)
 - [Used and Abused – CSS Inheritance and Our Misuse of the Cascade](https://www.phase2technology.com/blog/used-and-abused-css)
 
-> **Note:** something I'll start to do is attach all the articles and posts I read when making the project that helped me in some aspect of it at the end of the **What I learned** section.
+> **Note:** something I'll start to do is attach all the articles and posts I read when making the project that helped me in some aspect of it at the end of the [**What I learned**](#what-i-learned) section.
 
 > **Note:** I'd like to comment that also, starting from this project, I'll start to read more about English grammar in order to improve the quality of these READMEs and all the other stuff where I include a message within it in order to explain about something (like commits, comments in the code, etc.). the lecture of this project was about a doubt that was intriguing me since a while:
 
@@ -100,12 +100,12 @@ Other lectures that helped me to understand more in detail about BEM were the fo
 
 ## Reports
 
-> **Note:** In this section I was planning to take screenshots to the **Lighthouse** and **Gtmetrix** reports for a full understanding of the page's quality, but due to I had problems with respect to the reports for things that I unknown, I'll just add the Lighthouse report for now.
+> **Note:** in this section I was planning to take screenshots to the **Lighthouse** and **Gtmetrix** reports for a full understanding of the page's quality, but due to I had problems with respect to the reports for things that I unknown, I'll just add the Lighthouse report for now.
 
 ### Lighthouse
 ![](readme/lighthouse.png)
 
-> **Note**: The lighthouse report showed me a error with respect to the performance metric but I'm not completaly sure about what happened that provoked it yet.
+> **Note**: the lighthouse report showed me a error with respect to the performance metric but I'm not completaly sure about what happened that provoked it yet.
 
 ## Open Graph
 
