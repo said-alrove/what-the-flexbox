@@ -35,15 +35,6 @@ img { max-width: 100%; }
 //********************************* 
 //* TYPOGRAPHY 
 //*********************************
-h1, 
-h2,
-h3 { 
-    font-size: 3.2rem; 
-    text-transform: uppercase;
-    letter-spacing: abs.$spacing;
-    color: map.get(abs.$clr, 'white');
-}
-
 a { 
     text-decoration: none; 
     color: map.get(abs.$clr, 'white');

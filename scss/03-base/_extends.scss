@@ -1,6 +1,13 @@
 //********************************* 
 //* EXTENDS 
 //*********************************
+%heading {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    letter-spacing: abs.$spacing;
+    color: map.get(abs.$clr, 'white');
+}
+
 %layout-basics {
     //* NOTE!: The display and inline-size properties were declared in order to avoid the margin collapsing (it happened several times).
     //* INFO: https://www.sitepoint.com/community/t/margin-collapse-and-how-to-get-rid-of-it/5460/4

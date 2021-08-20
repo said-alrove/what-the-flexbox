@@ -3,4 +3,6 @@
 //*********************************
 .header {
     &-container { @extend %layout-basics; }
+
+    &__heading { @extend %heading; }
 }

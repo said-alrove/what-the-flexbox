@@ -41,6 +41,7 @@
     }
 
     &__heading {
+        @extend %heading;
         flex: {
             grow: 1;
             shrink: 1;

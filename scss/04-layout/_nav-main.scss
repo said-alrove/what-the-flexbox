@@ -3,9 +3,9 @@
 //*********************************
 .nav {
     &-container {
+        @extend %layout-basics;
         //* NOTE!: The order of the elements will look different in mobile in contrast to desktop, this is because the navigation looks weird below the header (as it's in the original order) when is deployed, therefore put the navigation on top make the design better.        
         order: -1;
-        @extend %layout-basics;
         @include less.query($device: 'tablet', $size: 'sm') {
             order: initial;
         }

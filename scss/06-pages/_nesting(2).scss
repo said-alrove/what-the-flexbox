@@ -63,7 +63,10 @@
         }
     }
 
-    &__heading { text-transform: capitalize; }
+    &__heading { 
+        @extend %heading;
+        text-transform: capitalize; 
+    }
     
     &__content {
         @include less.flexbox($dir: column, $gap: $_flex-gap);
