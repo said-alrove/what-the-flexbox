@@ -4,7 +4,7 @@
 .app {
     &-container {
         @include less.flexbox($dir: column);
-        margin-inline: auto;
+        margin: map.get(abs.$ly, 'margin-block') auto;
         max-inline-size: 50rem;
         block-size: 70rem;
         border: {
