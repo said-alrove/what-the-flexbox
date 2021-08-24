@@ -1,4 +1,4 @@
-# [what-the-flexbox](https://what-the-flexbox.netlify.app/)
+# [what-the-flexbox](https://wtf-11bvfh.netlify.app/)
 This was a project based on the practices given from the [What the Flexbox?](https://wesbos.com/) course taught by Wesbos on his [web](https://flexbox.io/).
 
 > **Note:** Recently I've started to deploy my sites on [Netlify](https://app.netlify.com/), therefore I changed the domain's link to the new one (in the HTML and the README files), but I kept the screenshots that held the old domain (there's no reason for changing it, the result would've been the same with a different link only).
